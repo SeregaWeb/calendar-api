@@ -1,0 +1,170 @@
+body{
+    background-image: url(https://cdn.pixabay.com/photo/2014/03/24/17/15/clock-295201_960_720.png);
+    background-size: 6%;
+    min-height: 100vh;
+}
+.calendar-app h2,h3,button{
+    margin: 0;
+    padding: 0;
+}
+.calendar-app {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    list-style: none;
+    
+    box-sizing: border-box;
+}
+.calendar-app li{
+    width: 14.2%;
+    min-width: 40px;
+    min-height:  40px;
+    font-family: sans-serif,fantasy,monospace;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    border: 1px solid #000000;
+
+}
+.event-list{
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+}
+.calendar-app .event-one{
+    background-color: #00bec7;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid #000;
+}
+
+.event-list li{
+    width: 100%;
+    border: none;
+    font-size: 12px;
+}
+
+hr{
+    margin: 2px 0;
+}
+
+.btn-delete{
+    background-color: red;
+    border: 0;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-family: sans-serif;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 16px;
+    cursor: pointer;
+}
+
+.calendar-app li:nth-child(1),
+.calendar-app li:nth-child(2),
+.calendar-app li:nth-child(3),
+.calendar-app li:nth-child(4),
+.calendar-app li:nth-child(5),
+.calendar-app li:nth-child(6),
+.calendar-app li:nth-child(7),
+.calendar-app li:nth-child(8){
+    min-height: 40px;
+}
+.first-li__controller{
+    display: flex;  
+}
+.calendar-app .wekend{
+    background: #36a72a;
+    color: #fff;
+}
+.calendar-app .wekend-day{
+    background: #6bbf63;
+    color: #fff;
+}
+.calendar-app span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 40px;
+    background-color: #d4d4d4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+}
+.calendar-app span:hover{
+    cursor: pointer;
+}
+
+.calendar-app span.next-mounth:hover{
+    cursor: default;
+}
+
+.calendar-app .tooday{
+    font-weight: 900;
+    background-color: #e9e90f;
+    z-index: 20;
+
+}
+
+.calendar-app .next-mounth{
+    background-color: #929292;
+    color: #b4b3b3;
+}
+
+.calendar-app .first-li{
+    width: 100%;
+    border: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-right , .btn-left  {
+    border: none;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border-radius: 50%;
+}
+
+.calendar-app .btn:hover{
+    cursor: pointer;
+}
+
+.calendar-app .btn-right::after , .btn-left::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 10px;
+    border-left: 3px solid #fff;
+    border-top: 3px solid #fff;
+}
+.calendar-app .btn-left::after {
+   
+    left: 12px;
+    transform: rotateZ(-45deg);
+   
+}
+.calendar-app .btn-right::after {
+    right: 12px;
+    transform: rotateZ(135deg);
+}
+
+.days-header{
+    font-size: 25px;
+}
+.calendar-app .days-header:hover{
+    cursor: default;
+}
+    

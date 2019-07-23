@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /api/
+RewriteRule (.*) http://tc.geeksforless.net/~user7/BOOKER/Server/api/$1 [P]
+<Limit GET POST PUT DELETE>
+  Allow from all
+</Limit>
